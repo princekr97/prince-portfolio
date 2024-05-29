@@ -1,0 +1,208 @@
+<div class="section">
+  <!-- <div class="row"> -->
+  <h1 class="big-4">Experience</h1>
+  <div class="underline"></div>
+  <!-- </div> -->
+
+  <!-- <div class="image-gallery">
+    <mat-card *ngFor="let image of image" class="image-card">
+      <img mat-card-image [src]="image.url" alt="Image">
+      <mat-card-content>
+        <p>{{ image.description }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-icon-button (click)="likeImage(image)">
+          <mat-icon>thumb_up</mat-icon>
+        </button>
+        <button mat-icon-button (click)="previewImage(image)">
+          <mat-icon>visibility</mat-icon>
+        </button>
+        <button mat-icon-button (click)="downloadImage(image)">
+          <mat-icon>cloud_download</mat-icon>
+        </button>
+        <button mat-icon-button (click)="shareImage(image)">
+          <mat-icon>share</mat-icon>
+        </button>
+      </mat-card-actions>
+
+    </mat-card>
+
+
+
+
+
+
+
+
+  </div> -->
+
+  <!-- card extra feat -->
+  <!-- <div class="ag-format-container">
+    <div class="ag-courses_box">
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+
+          <div class="ag-courses-item_title">
+            UI/Web&amp;Graph design for teenagers 11-17&#160;years old
+          </div>
+
+          <div class="ag-courses-item_date-box">
+            Start:
+            <span class="ag-courses-item_date">
+              04.11.2022
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+
+          <div class="ag-courses-item_title">
+            UX/UI Web-Design&#160;+ Mobile Design
+          </div>
+
+          <div class="ag-courses-item_date-box">
+            Start:
+            <span class="ag-courses-item_date">
+              04.11.2022
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+
+          <div class="ag-courses-item_title">
+            Annual package "Product+UX/UI+Graph designer&#160;2022"
+          </div>
+
+          <div class="ag-courses-item_date-box">
+            Start:
+            <span class="ag-courses-item_date">
+              04.11.2022
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+
+          <div class="ag-courses-item_title">
+            Graphic Design
+          </div>
+
+          <div class="ag-courses-item_date-box">
+            Start:
+            <span class="ag-courses-item_date">
+              04.11.2022
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+
+          <div class="ag-courses-item_title">
+            Motion Design
+          </div>
+
+          <div class="ag-courses-item_date-box">
+            Start:
+            <span class="ag-courses-item_date">
+              30.11.2022
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+
+          <div class="ag-courses-item_title">
+            Front-end development&#160;+ jQuery&#160;+ CMS
+          </div>
+        </a>
+      </div>
+
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg">
+          </div>
+          <div class="ag-courses-item_title">
+            Digital Marketing
+          </div>
+        </a>
+      </div>
+
+      <div class="ag-courses_item">
+        <a href="#" class="ag-courses-item_link">
+          <div class="ag-courses-item_bg"></div>
+
+          <div class="ag-courses-item_title">
+            Interior Design
+          </div>
+
+          <div class="ag-courses-item_date-box">
+            Start:
+            <span class="ag-courses-item_date">
+              31.10.2022
+            </span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div> -->
+
+  <!-- new2 -->
+  <div class="image-gallery">
+
+    <div class="card-container" *ngFor="let image of image">
+      <a href="/" class="hero-image-container">
+        <img class="hero-image" [src]="image.url" alt="Spinning glass cube" />
+      </a>
+      <main class="main-content">
+        <h1><a href="#">Equilibrium #3429</a></h1>
+        <p>{{image.description}}</p>
+        <div class="flex-row">
+          <!-- <div class="coin-base">
+            <img src="https://i.postimg.cc/T1F1K0bW/Ethereum.png" alt="Ethereum" class="small-image" />
+            <h2>0.041 ETH</h2>
+          </div>
+          <div class="time-left">
+            <img src="https://i.postimg.cc/prpyV4mH/clock-selection-no-bg.png" alt="clock" class="small-image" />
+            <p>3 days left</p>
+          </div> -->
+          <mat-card-actions>
+            <button mat-icon-button class="action-button" (click)="likeImage(image)">
+              <mat-icon>thumb_up</mat-icon>
+            </button>
+            <button mat-icon-button class="action-button" (click)="previewImage(image)">
+              <mat-icon>visibility</mat-icon>
+            </button>
+            <button mat-icon-button class="action-button" (click)="downloadImage(image)">
+              <mat-icon>cloud_download</mat-icon>
+            </button>
+            <button mat-icon-button class="action-button" (click)="shareImage(image)">
+              <mat-icon>share</mat-icon>
+            </button>
+          </mat-card-actions>
+        </div>
+      </main>
+      <div class="card-attribute">
+        <img src="/assets/images/prince_photo.JPG" alt="avatar" class="small-avatar" />
+        <p>Creation of <span><a href="#">Prince</a></span></p>
+      </div>
+    </div>
+  </div>
+</div>

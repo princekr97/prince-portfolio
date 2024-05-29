@@ -1,0 +1,75 @@
+::ng-deep .slider-container {
+    position: relative;
+    width: 100%;
+    // overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    overflow-y: scroll;
+
+  }
+  
+ ::ng-deep .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  ::ng-deep .slide {
+    min-width: 50vh;
+    transition: opacity 1s ease-in-out;
+    opacity: 0.5;
+
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slide img {
+    width: 50vh;
+    height: auto;
+  }
+  
+  .gallery-title {
+    position: absolute;
+    top: 20px;
+    font-size: 3em;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .categories {
+    position: absolute;
+    bottom: 20px;
+    font-size: 1.2em;
+    color: white;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .category {
+    cursor: pointer;
+  }
+  
+  button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(232, 99, 10, 0.5);
+    color: rgb(222, 214, 214);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  

@@ -1,0 +1,93 @@
+// .image-gallery {
+//     display: flex;
+//     flex-wrap:wrap;
+//     justify-content: center;
+//     margin-top: 10vh;
+//     flex-direction:row-reverse
+//   }
+  
+//   @media (max-width: 600px) {
+//     .image-gallery {
+//       flex-direction:row;
+//       align-items: center;
+//     }
+//   }
+  
+
+/* Container for the image gallery */
+// .image-gallery {
+//     display: flex;
+//     flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
+//     gap: 20px; /* Space between cards */
+//     justify-content: flex-start; /* Align items to the start of the container */
+//     padding: 20px;
+//     overflow-y: auto; /* Enable scrolling if content overflows */
+//     height: 100vh; /* Full viewport height */
+//     box-sizing: border-box; /* Include padding and border in element's total width and height */
+//   }
+  
+//   /* Each image card */
+//   app-image-card {
+//     background: #fff;
+//     border-radius: 10px;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//     transition: transform 0.3s ease, box-shadow 0.3s ease;
+//     width: 300px; /* Fixed width for each card */
+//     margin: 10px; /* Margin for spacing between cards */
+//     box-sizing: border-box; /* Include padding and border in element's total width and height */
+//   }
+  
+//   app-image-card:hover {
+//     transform: translateY(-10px);
+//     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+//   }
+  
+//   /* Animation for the cards */
+//   @keyframes fadeInUp {
+//     from {
+//       opacity: 0;
+//       transform: translateY(20px);
+//     }
+//     to {
+//       opacity: 1;
+//       transform: translateY(0);
+//     }
+//   }
+  
+//   app-image-card {
+//     animation: fadeInUp 0.5s ease forwards;
+//   }
+  
+//   /* Media query for responsive design */
+//   @media (max-width: 768px) {
+//     .image-gallery {
+//       gap: 10px; /* Reduce gap for smaller screens */
+//       padding: 10px;
+//     }
+  
+//     app-image-card {
+//       width: calc(100% - 20px); /* Full width minus gap for smaller screens */
+//       margin: 10px 0; /* Margin for spacing between cards vertically */
+//     }
+//   }
+  
+//   @media (min-width: 769px) and (max-width: 1024px) {
+//     .image-gallery {
+//       gap: 15px; /* Slightly smaller gap for medium screens */
+//     }
+  
+//     app-image-card {
+//       width: calc(50% - 30px); /* Two cards per row for medium screens */
+//     }
+//   }
+  
+//   @media (min-width: 1025px) {
+//     .image-gallery {
+//       gap: 20px; /* Default gap for larger screens */
+//     }
+  
+//     app-image-card {
+//       width: calc(25% - 40px); /* Four cards per row for large screens */
+//     }
+//   }
+  
