@@ -8,20 +8,20 @@ import { MatIconModule } from '@angular/material/icon';
 @Component({
   selector: 'app-image-card',
   standalone: true,
-  imports: [MatCard,MatCardModule,CommonModule,MatIconModule],
+  imports: [MatCard, MatCardModule, CommonModule, MatIconModule],
   templateUrl: './image-card.component.html',
   styleUrl: './image-card.component.scss'
 })
-export class ImageCardComponent implements OnInit{
+export class ImageCardComponent implements OnInit {
   @Input() image: any;
-  
+
   ngOnInit() {
-console.log('imgt',this.image)
+    // console.log('imgt',this.image)
   }
-  likeImage(image:any) {
+  likeImage(image: any) {
 
   }
-  previewImage(img:any) {}
-  downloadImage(img:any) {}
-  shareImage(img:any) {}
+  previewImage(img: any) { }
+  downloadImage(img: any) { }
+  shareImage(img: any) { }
 }
