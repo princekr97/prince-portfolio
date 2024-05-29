@@ -1,0 +1,19 @@
+<div class="slider-container">
+    <div class="slider" >
+      <div class="slide" *ngFor="let image of images; let i = index" [ngClass]="{ 'active': i === currentIndex }">
+        <img [src]="image.url" [alt]="image.description">
+      </div>
+    </div>
+    <div class="gallery-title">GALLERY</div>
+    <!-- <div class="categories">
+      <span class="category">Category 1</span>
+      <span class="category">Category 2</span>
+    </div> -->
+    <button mat-icon-button class="prev" (click)="prevSlide()">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+    <button mat-icon-button class="next" (click)="nextSlide()">
+      <mat-icon>chevron_right</mat-icon>
+    </button>
+  </div>
+  
