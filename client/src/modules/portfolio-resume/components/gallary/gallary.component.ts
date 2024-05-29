@@ -5,12 +5,12 @@ import { ImageSliderComponent } from '../image-slider/image-slider.component';
 @Component({
   selector: 'app-gallary',
   standalone: true,
-  imports: [ImageCardComponent,ImageSliderComponent],
+  imports: [ImageCardComponent, ImageSliderComponent],
   templateUrl: './gallary.component.html',
   styleUrl: './gallary.component.scss'
 })
 export class GallaryComponent {
-   images = [
+  images = [
     // Sample data
     { url: '/assets/images/prince_img12.jpeg', description: 'A captivating moment captured by Prince' },
     { url: '/assets/images/prince_img6.jpeg', description: 'A captivating moment captured by Prince' },
@@ -39,8 +39,8 @@ export class GallaryComponent {
   ];
   constructor() { }
 
-  ngOnInit(): void { 
-    console.log('galley', this.images)
+  ngOnInit(): void {
+    // console.log('galley', this.images)
   }
   onScroll(): void {
     // Logic for infinite scroll
