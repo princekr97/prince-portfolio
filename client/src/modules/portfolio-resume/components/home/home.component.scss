@@ -75,24 +75,14 @@
 ///
 /* Styling for the action buttons */
 .action-button {
-  // background-color: #4CAF50; /* Button background color */
-  // color: white; /* Button text color */
-  // border: none; /* Remove button border */
-  // border-radius: 5px; /* Button border radius */
-  // padding: 10px 20px; /* Button padding */
-  // font-size: 12px; /* Button font size */
-  // cursor: pointer; /* Show pointer cursor on hover */
-  // transition: background-color 0.3s, transform 0.3s; /* Smooth transition effect */
+
   background: #ffbd39;
   border: 1px solid #ffbd39 !important;
   color: #000000 !important;
   cursor: pointer;
-  // -webkit-border-radius: 40px;
-  // -moz-border-radius: 40px;
-  // -ms-border-radius: 40px;
+
   border-radius: 30px;
-  // -webkit-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
-  // -moz-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+
   box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
   font-size: 12px;
   text-transform: uppercase;
