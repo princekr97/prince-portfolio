@@ -83,50 +83,6 @@
   }
 }
 
-/* Standard button styles */
-/* Specific selector for mat-card-actions buttons */
-/* Styling for mat-icon-button */
-/* Styling for mat-icon-button */
-// ::ng-deep .mat-icon-button {
-//     background-color: transparent; /* Transparent background */
-//     color: #757575; /* Default icon color */
-//     border: none; /* No border */
-//     padding: 10px; /* Padding */
-//     font-size: 74px; /* Icon size */
-//     transition: color 0.3s; /* Smooth color transition */
-//   }
-
-//   /* Stylish hover effect */
-//   ::ng-deep .mat-icon-button:hover {
-//     color: #4CAF50; /* Green color on hover */
-//   }
-
-//   /* Animated effect */
-//   ::ng-deep .mat-icon-button {
-//     position: relative; /* Position relative for absolute positioning of pseudo-elements */
-//     overflow: hidden; /* Hide overflowing content */
-//   }
-
-//   ::ng-deep .mat-icon-button::before {
-//     content: ''; /* Empty content */
-//     position: absolute; /* Position absolute */
-//     top: 50%; /* Align to vertical center */
-//     left: 50%; /* Align to horizontal center */
-//     width: 300%; /* Width */
-//     height: 300%; /* Height */
-//     background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-//     transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s; /* Smooth transition */
-//     border-radius: 50%; /* Circular shape */
-//     z-index: 1; /* Higher
-//  transform: translate(-50%, -50%); /* Center positioning */
-// }
-
-// ::ng-deep .mat-icon-button:hover::before {
-//   width: 0; /* Shrink width on hover */
-//   height: 0; /* Shrink height on hover */
-//   top: 50%; /* Reset top position */
-//   left: 50%; /* Reset left position */
-// }  
 
 /* Styling for mat-icon-button */
 ::ng-deep .mat-icon {

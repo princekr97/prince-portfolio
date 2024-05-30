@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "../dist/prince-portfolio",
+            "outputPath": "dist/prince-portfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [

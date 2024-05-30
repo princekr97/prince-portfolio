@@ -1,0 +1,41 @@
+.footer-toolbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;
+    background-color: black;
+    height: 5rem;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    color: rgb(247, 178, 17);
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.social-links a mat-icon {
+    font-size: 24px;
+}
+
+.spacer {
+    flex: 1;
+}
+
+mat-toolbar {
+    justify-content: center;
+}

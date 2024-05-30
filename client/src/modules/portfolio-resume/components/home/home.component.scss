@@ -4,18 +4,91 @@
 }
 
 .bio-heading {
-  font-size: 36px;
-  font-weight: bold;
-  color: #a3a68a;
-  margin-top: 0.1vh;
+  font-size: 28px;
+  letter-spacing: 1.2px;
+  // background: var(--Title-Gradient, linear-gradient(90deg, #191818 -1.88%, #d9bd40 100.56%));
+  // background-clip: text;
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  background: var(--Title-Gradient, linear-gradient(90deg, #687f28 -1.88%, #6ab07b 90.56%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .bio-description {
-  font-size: 18px;
-  color: #9d9696;
-  margin-top: 20px;
+  // font-size: 18px;
+  // color: #9d9696;
+  // margin-top: 20px;
   display: flex;
   justify-content: center;
+  color: var(--dark_light, #847798);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .bio-description {
+    font-size: 20px;
+    /* Slightly smaller font size for mobile */
+    line-height: 1.4;
+    /* Improved line height for readability */
+    margin: 10px 5px;
+    /* Adjust margins for mobile */
+    padding: 10px;
+    /* Add padding for better spacing */
+    text-align: justify;
+    /* Justify text for a cleaner look on mobile */
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .card-content {
+    padding: 10px;
+    /* Add padding for better spacing on mobile */
+  }
+
+  .resume-wrap {
+    margin-bottom: 10px;
+    /* Reduce margin between each resume section on mobile */
+  }
+
+  .bio-heading,
+  .designation,
+  .position,
+  .date {
+    font-size: 1.2em;
+    /* Increase font size for headings on mobile */
+  }
+
+  .bio-description,
+  .mt-4 {
+    font-size: 0.9em;
+    /* Reduce font size for description text on mobile */
+    line-height: 1.5;
+    /* Adjust line height for better readability on mobile */
+  }
+
+  ul {
+    padding-left: 20px;
+    /* Indent list items for better readability on mobile */
+  }
+}
+
+@media (max-width: 600px) {
+  .action-button {
+    // display: block;
+    /* Change buttons to block level for stacking vertically */
+    width: 50%;
+    /* Set full width for each button */
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    /* Adjust margin for spacing between buttons */
+  }
 }
 
 .profile-container {
@@ -67,9 +140,19 @@
 }
 
 .designation {
-  font-size: 24px;
-  color: #8f8d8d;
-  margin-bottom: 20px;
+  // font-size: 24px;
+  // // color: #8f8d8d;
+  // margin-bottom: 20px;
+  // background: var(--Title-Gradient, linear-gradient(90deg, #239982 -1.88%, #6d64d3 104.56%));
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  background: var(--Title-Gradient, linear-gradient(90deg, #239982 -1.88%, #6d64d3 104.56%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0.5rem;
 }
 
 ///
@@ -82,8 +165,8 @@
   cursor: pointer;
 
   border-radius: 30px;
-
-  box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+  box-shadow: 10px 7px 20px rgb(133, 164, 71);
+  // box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -93,14 +176,17 @@
   padding-top: 1rem !important;
   padding-right: 1.5rem !important;
   margin-left: 1rem !important;
+  transition: ease-out 0.6s;
+
 }
 
 /* Hover animation */
 .action-button:hover {
-  background-color: #45a049;
-  /* Darker shade of button color on hover */
-  transform: translateY(-3px);
-  /* Move button slightly upwards */
+
+  color: black;
+  text-shadow: none;
+  box-shadow: inset 0 -80px 0 0 #f9b836;
+
 }
 
 /* Active effect */
@@ -254,6 +340,10 @@
   margin: 0 auto;
   transform: scaleX(1.2);
   margin-top: 10vh;
+  background: var(--Title-Gradient, linear-gradient(90deg, #239982 -1.88%, #6d64d3 104.56%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (min-width: 768px) {
@@ -266,20 +356,20 @@
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5 {
-  line-height: 1.5;
-  color: white;
-  font-weight: 400;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// .h1,
+// .h2,
+// .h3,
+// .h4,
+// .h5 {
+//   line-height: 1.5;
+//   color: white;
+//   font-weight: 400;
+// }
 
 
 .resume-wrap {
@@ -325,6 +415,7 @@ h5,
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
+  color: var(--skills_text_color, #56b6d4);
 }
 
 .mt-4 {
@@ -476,4 +567,31 @@ text-center {
 .mb-4,
 .my-4 {
   margin-bottom: 1.5rem !important;
+}
+
+
+.pcontent {
+
+  color: var(--dark_light, #736489);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  font-family: __Bai_Jamjuree_2d2b04, __Bai_Jamjuree_Fallback_2d2b04;
+  font-style: normal;
+  color: var(--Title-Gradient, #a0a471);
+
+}
+
+.Experience_active__BfpVO {
+  display: inline-block;
+  padding: 15px 20px;
 }

@@ -1,60 +1,85 @@
-
-
-.mat-toolbar {
-  background-color: #000000; /* Change this to your desired background color */
-  font-family: fangsong;
-}
-
-// .mat-button {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   color: white; /* Change icon color */
-//   text-decoration: none; /* Remove underline */
-//   padding: 8px; /* Adjust padding as needed */
-//   font-size: larger;
-// }
-
-// .icon-label {
-//   font-size: 20px; /* Adjust label font size */
-// }
+// css for text logo
 span {
   color: white;
   font-weight: 400;
 }
-// mat-icon {
-//   color: aliceblue;
-// }
 
+.pagelogo {
+  display: flex;
+  text-decoration: none;
+  font-size: 1em;
+  justify-content: start;
+  align-items: center;
+  /* Adjust the size as needed */
+  // color: inherit;
 
+  /* To inherit the color from parent */
+
+  // font-size: 28px;
+  letter-spacing: 1.2px;
+  background: var(--Title-Gradient, linear-gradient(90deg, #2fb756 -1.88%, #ebbf0d 104.56%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.pagelogo span {
+  margin: 0 5px;
+  /* Optional: Adjust spacing between text and curly braces */
+}
+
+// css for the top toolbar
 .mat-toolbar {
-  // background-color: #4CAF50; /* Change this to your desired background color */
-  display: flex; /* Use flexbox */
-  justify-content:start; /* Distribute items evenly */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  justify-content: start;
+  align-items: center;
   gap: 70px;
+  background-color: #000000;
+  font-family: fangsong;
+}
+
+
+// css for the toolbar action button
+.header__link {
+  color: #ffbd39;
+  display: inline-block;
+  padding: 5px 25px;
+  border-radius: 30px;
+  transition: ease-out 0.6s;
+  cursor: pointer;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px #1d1d1d;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: system-ui;
+  text-transform: uppercase;
+}
+
+
+.header__link:hover {
+  color: black;
+  text-shadow: none;
+  box-shadow: inset 0 -80px 0 0 #f9b836;
+}
+
+.header__link:active {
+  transform: scale(0.6);
+}
+
+@media (max-width:1023px) {
+  .header__link {
+    color: #ffbd39;
+    display: inline-block;
+    padding: 5px 10px;
+    border: none !important;
+    outline: none;
+    transition: none;
+  }
 
 }
 
-// .mat-button {
-//   color: white; /* Change icon color */
-//   text-decoration: none; /* Remove underline */
-//   transition: background 0.5s ease;
-
-// }
-// .mat-button:hover {
-//   color: #f3c705;
-// }
-
-.icon-label {
-  font-size: 20px; /* Adjust label font size */
-}
-a {
-  transition: background 0.5s ease;
-  // background: #fff;
-  color: white;
-}
-a:hover {
-  color: #f3c705;
+.header__link,
+.header__nav-btn {
+  font-size: 1.1rem;
 }
