@@ -3,6 +3,6 @@ import { GallaryComponent } from '../modules/portfolio-resume/components/gallary
 import { HomeComponent } from '../modules/portfolio-resume/components/home/home.component';
 
 export const appRoutes: Routes = [
-    { path: '', component: HomeComponent },
-    { path: 'gallary', component: GallaryComponent }
-  ];
+  { path: '', component: HomeComponent },
+  { path: 'gallery', component: GallaryComponent }
+];

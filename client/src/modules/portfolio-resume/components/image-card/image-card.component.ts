@@ -19,7 +19,7 @@ export class ImageCardComponent implements OnInit {
     // console.log('imgt',this.image)
   }
   likeImage(image: any) {
-
+    console.log('likeImage')
   }
   previewImage(img: any) { }
   downloadImage(img: any) { }

@@ -11,5 +11,10 @@ import { RouterModule } from '@angular/router';
   styleUrl: './tool-bar.component.scss'
 })
 export class ToolBarComponent {
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
 }
