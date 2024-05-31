@@ -1,21 +1,19 @@
 <mat-toolbar color="primary">
   <a class="pagelogo" href="/">
     <img class="logo" src="/assets/images/page_logo.jpeg" alt="Profile Picture">
-    <!-- <span>&#123;</span>ExploreWithPrince<span>&#125;</span> -->
   </a>
 
+  <span class="spacer"></span>
 
+  <button mat-button class="mobile-menu-button" aria-label="Menu" (click)="toggleMenu()">
+    <mat-icon>menu</mat-icon>
+  </button>
 
-  <a mat-button class="header__link external-link" routerLink="">Home</a>
+  <div class="nav-links" [class.mobile-active]="isMenuOpen">
+    <a mat-button class="header__link external-link" routerLink="">Home</a>
+    <a mat-button class="header__link external-link" routerLink="gallery">Gallery</a>
+    <a mat-button class="header__link external-link" routerLink="video">Video</a>
+    <a mat-button class="header__link external-link" routerLink="profile">Profile</a>
 
-
-  <a mat-button class="header__link external-link" routerLink="gallary">Gallery</a>
-
-  <a mat-button class="header__link external-link">
-    Video
-  </a>
-  <a mat-button class="header__link external-link">
-    Profile
-  </a>
-
+  </div>
 </mat-toolbar>
