@@ -8,68 +8,26 @@
         APIs integration | GITHub</p>
     </div>
 
-    <button mat-button class="action-button" (click)="socialMediaLink('linkdin')">linkdin</button>
-    <button mat-button class="action-button">Github</button>
-    <button mat-button class="action-button">Instrgram</button>
+    <button mat-button class="action-button" (click)="socialMediaLink('linkedin')">linkedin</button>
+    <button mat-button class="action-button" (click)="socialMediaLink('github')">Github</button>
+    <button mat-button class="action-button" (click)="socialMediaLink('resume')">Resume</button>
 
     <div class="row">
       <h1 class="big-4">Experience</h1>
       <div class="underline"></div>
     </div>
-
     <div class="card-content">
-      <div class="resume-wrap">
-        <span class="bio-heading">2024 - Present</span>
-        <h2 class="designation"> Software Developer</h2>
-        <span class="position">Tarento - Bengaluru</span>
-        <p class="bio-description"> Currently Contributing to Sunbird ED Building Blocks, highly scalable open-source
-          learning products, utilized by Diksha
-          (https://diksha.gov.in/explore) as an adopter for the client Ekstep(https://ekstep.org/).<br>
-          Tech-Stack - Front-End Development · Node.js · Angular 12+ · Typescript · JavaScript · Jest · Postman API ·
-          HTML/CSS · GitHub ·
-          Docker
-        </p>
+      <div class="resume-wrap" *ngFor="let experience of userInfoDetails?.experienceData">
+        <span class="bio-heading">{{ experience?.period }}</span>
+        <h2 class="designation">{{ experience?.designation }}</h2>
+        <span class="position">{{ experience?.position }}</span>
+        <p class="bio-description">{{ experience?.description }}<br>Tech-Stack - {{ experience?.techStack }}</p>
         <div class="Experience_active__BfpVO">
-          <p>•
-            Spearheaded the development of Sunbird ED Portal, employing Angular 12+, NodeJS, and Form APIs to create a
-            scalable and user-friendly platform <br>•
-            Analyzed business and functional requirements to engineer efficient technical solutions. <br>•
-            Engineered key features for ED, transitioning hardcoded framework logic to framework-agnostic solutions,
-            enabling
-            broader application. <br>•
-            Produced user-friendly technical documentation and architecture designs to streamline adoption by external
-            stakeholders. <br>•
-            Implemented rigorous unit tests using the Jest Framework to ensure robust code quality and reliability.<br>
-            Managed and enhanced Angular libraries, ensuring alignment with security standards and compatibility with
-            cutting-edge
-            technologies.<br></p>
+          <p *ngFor="let detail of experience?.details">• {{detail}}<br></p>
         </div>
-      </div>
-
-      <!-- <div class="card-content"> -->
-
-      <div class="resume-wrap">
-        <span class="bio-heading">2019 - 2022</span>
-        <h2 class="designation"> Software Consultant</h2>
-        <span class="position">Muraai Information Technologies, Bengaluru</span>
-        <p class="bio-description"> Accounts Payable - An enterprise web application to automate the accounts payable
-          process.<br>
-          Tech-Stack - Angular 12+,Typescript, HTML, CSS, Flex layout, Angular Material design, MySQL, GIT,BPM
-        </p>
-        <div class="Experience_active__BfpVO">
-          <p>•
-            Spearheaded the development of SIMS(Supplier Invoice Mangement System) Portal, employing Angular 12+, BPM,
-            and Form APIs to create a
-            scalable and user-friendly platform <br>•
-            Analyzed business and functional requirements to engineer efficient technical solutions. <br>•
-            Implemented three way matching strategy to validate and verify an invoice. <br>•
-            Taking an active role in developing and structuring our Single page application. <br>•
-            Approval matrix implementation to resolve runtime process flow.<br>•
-            Unit level testing on the process build, Debug and fixing the bugs.<br></p>
-        </div>
-        <!-- </div> -->
       </div>
     </div>
+
 
     <div class="row">
       <h1 class="big-4">Education</h1>
@@ -115,7 +73,7 @@
       </div>
     </div>
   </div>
-  <!-- <div class="row justify-content-center mb-5 pb-3">
+  <div class="row justify-content-center mb-5 pb-3">
     <h1 class="big big-2">Project Inprogress</h1>
-  </div> -->
+  </div>
 </div>

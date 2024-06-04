@@ -127,6 +127,7 @@ span {
     transition: ease-out 0.6s;
     cursor: pointer;
     text-decoration: none;
+    position: absolute;
 
   }
 
@@ -146,3 +147,30 @@ span {
     display: none;
   }
 }
+
+
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mobile-menu-button {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .mobile-menu-button {
+    display: inline-block;
+  }
+
+  .header__link {
+    display: none;
+  }
+}
+
+/* Style for the dialog */
+// .menu-dialog-container .mat-dialog-container {
+//   padding: 0;
+//   overflow: hidden;
+//   border-radius: 0;
+// }

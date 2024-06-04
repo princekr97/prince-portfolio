@@ -1,0 +1,46 @@
+{
+    "experienceData": [
+        {
+            "period": "2024 - Present",
+            "designation": "Software Developer",
+            "position": "Tarento - Bengaluru",
+            "description": "Currently Contributing to Sunbird ED Building Blocks, highly scalable open-source learning products, utilized by Diksha (https://diksha.gov.in/explore) as an adopter for the client Ekstep(https://ekstep.org/).",
+            "techStack": "Front-End Development · Node.js · Angular 12+ · Typescript · JavaScript · Jest · Postman API · HTML/CSS · GitHub · Docker",
+            "details": [
+                "Spearheaded the development of Sunbird ED Portal, employing Angular 12+, NodeJS, and Form APIs to create a scalable and user-friendly platform",
+                "Analyzed business and functional requirements to engineer efficient technical solutions.",
+                "Engineered key features for ED, transitioning hardcoded framework logic to framework-agnostic solutions, enabling broader application.",
+                "Produced user-friendly technical documentation and architecture designs to streamline adoption by external stakeholders.",
+                "Implemented rigorous unit tests using the Jest Framework to ensure robust code quality and reliability.",
+                "Managed and enhanced Angular libraries, ensuring alignment with security standards and compatibility with cutting-edge technologies."
+            ]
+        },
+        {
+            "period": "2019 - 2022",
+            "designation": "Software Consultant",
+            "position": "Muraai Information Technologies, Bengaluru",
+            "description": "Accounts Payable - An enterprise web application to automate the accounts payable process.",
+            "techStack": "Angular 12+,Typescript, HTML, CSS, Flex layout, Angular Material design, MySQL, GIT,BPM",
+            "details": [
+                "Spearheaded the development of SIMS(Supplier Invoice Mangement System) Portal, employing Angular 12+, BPM, and Form APIs to create a scalable and user-friendly platform",
+                "Analyzed business and functional requirements to engineer efficient technical solutions.",
+                "Implemented three way matching strategy to validate and verify an invoice.",
+                "Taking an active role in developing and structuring our Single page application.",
+                "Approval matrix implementation to resolve runtime process flow.",
+                "Unit level testing on the process build, Debug and fixing the bugs."
+            ]
+        }
+    ],
+    "educationData": [
+        {
+            "institution": "Sambhram Institute of Technology Bengaluru",
+            "duration": "August 2015 - May 2019",
+            "degree": "BE CSE"
+        },
+        {
+            "institution": "Rawat Public School Jaipur",
+            "duration": "April 2013 – April 2015",
+            "degree": "Science 12th"
+        }
+    ]
+}
